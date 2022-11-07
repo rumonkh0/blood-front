@@ -8,7 +8,7 @@ function Register() {
   return (
     <>
       <div className={loginpage}>
-        <div className={'form-section'+' '+formsection}>
+        <div className={"form-section"+' '+formsection}>
           <form className={form}>
             <h3>Sign Up</h3>
             <div className="mb-3">
