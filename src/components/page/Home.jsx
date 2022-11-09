@@ -28,7 +28,7 @@ function Home() {
                 </div>
             </div>
             <div class={right}>
-                <img src={image} alt="donate"/>
+                {/* <img src={image} alt="donate"/> */}
             </div>
 
 
