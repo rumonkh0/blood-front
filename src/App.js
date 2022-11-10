@@ -13,8 +13,8 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" element={<PriveteRoute component={Home} />} />
-          <Route path="/kk" element={<Home/>} />
+          {/* <Route path="/" element={<PriveteRoute component={Home} />} /> */}
+          <Route path="/" element={<Home/>} />
           <Route path="/login" element={<Login />} />
           <Route path="/regester" element={<Register />} />
         </Routes>
