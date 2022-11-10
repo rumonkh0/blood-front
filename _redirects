@@ -1,2 +1,2 @@
-/api/* http://rblood.herokuapp.com/api/:splat 200
+/api/* https://rblood.herokuapp.com/api/:splat 200
 /* /index.html 200
