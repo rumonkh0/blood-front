@@ -31,7 +31,7 @@ const AuthState = (props) => {
     try {
       setLoading();
       console.log("register going");
-      const res = await axios.post("https://rblood.herokuapp.com/api/v1/auth/register", formdata);
+      const res = await axios.post("/api/v1/auth/register", formdata);
 
       dispatch({ type: REGISTER_SUCCESS, payload: res.data });
     } catch (error) {
@@ -43,7 +43,7 @@ const AuthState = (props) => {
   const login = async (formdata) => {
     try {
       setLoading();
-      const res = await axios.post("https://rblood.herokuapp.com/api/v1/auth/login", formdata);
+      const res = await axios.post("/api/v1/auth/login", formdata);
 
       dispatch({ type: LOGIN_SUCCESS, payload: res.data });
       loadUser();
@@ -55,7 +55,7 @@ const AuthState = (props) => {
   //logout
   const logout = async () => {
     setLoading();
-    await axios.get("https://rblood.herokuapp.com/api/v1/auth/logout");
+    await axios.get("/api/v1/auth/logout");
 
     dispatch({ type: LOGOUT });
   };
@@ -64,7 +64,7 @@ const AuthState = (props) => {
   const loadUser = async () => {
     setLoading();
     try {
-      const res = await axios.get("https://rblood.herokuapp.com/api/v1/auth/me");
+      const res = await axios.get("/api/v1/auth/me");
 
       dispatch({ type: USER_LOADED, payload: res.data });
     } catch (error) {
