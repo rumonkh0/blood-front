@@ -1,6 +1,6 @@
 import React from "react";
 import { useContext, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import style from "./style.module.css";
 import AuthContext from "../../context/auth/authContext";
 
@@ -11,7 +11,7 @@ function Navbar() {
 
   useEffect(()=>{
     loadUser();
-  },[user])
+  },[])
 
   const onLogout = () => {
     logout();
@@ -33,7 +33,7 @@ function Navbar() {
           <ul>
             <li>
               <Link className={btn1}>
-                {/* <p>Hello, {user && user.data.name}</p> */}
+                <p>Hello, {user && user.data.name}</p>
               </Link>
             </li>
             <li>
