@@ -7,7 +7,6 @@ import style from "./login.module.css";
 function Login() {
   const { state, login } = useContext(AuthContext);
   const { loginpage, formsection } = style;
-
   const [formData, setFormData] = useState({});
   const { mobile, password } = formData;
 
