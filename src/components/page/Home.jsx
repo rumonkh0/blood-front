@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import style from "../layout/style.module.css"
-// import image from "../img/new vector.jpg"
+import image from "../img/new vector.jpg"
 
 function Home() {
 
@@ -28,7 +28,7 @@ function Home() {
                 </div>
             </div>
             <div class={right}>
-                {/* <img src={image} alt="donate"/> */}
+                <img src={image} alt="donate"/>
             </div>
 
 
