@@ -29,11 +29,11 @@ function Navbar() {
           <ul>
             <li>
               <Link className={btn1}>
-                <p>Hello, {user && user.data.name}</p>
+                {/* <p>Hello, {user && user.data.name}</p> */}
               </Link>
             </li>
             <li>
-              <Link to="/" className={[btn1, active].join(" ")} active>
+              <Link to="/" className={[btn1, active].join(" ")}>
                 Home
               </Link>
             </li>
@@ -83,7 +83,7 @@ function Navbar() {
         <div>
           <ul>
             <li>
-              <Link to="/" className={[btn1, active].join(" ")} active>
+              <Link to="/" className={[btn1, active].join(" ")}>
                 Home
               </Link>
             </li>
