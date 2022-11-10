@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useState } from "react";
 import AuthContext from "../../context/auth/authContext";
 import Spinner from "../layout/Spinner"
 import { Navigate } from "react-router-dom";
