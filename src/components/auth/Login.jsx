@@ -1,5 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import AuthContext from "../../context/auth/authContext";
+import Spinner from "../layout/Spinner"
 import { Navigate } from "react-router-dom";
 import style from "./login.module.css";
 
@@ -28,7 +29,7 @@ function Login() {
   };
 
   if (state.loading) {
-    return <div>loading</div>;
+    return <Spinner />;
   }
 
   if (state.isAuthenticated) {
